@@ -1,24 +1,40 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import { useEffect } from 'react';
+import { useDispatch } from 'react-redux';
+
+import { Outlet } from 'react-router-dom';
+
+import ResponsiveAppBar from './components/ResponsiveAppBar';
+import { getMovies, getEvents } from './actions';
+
+import { ThemeProvider, createTheme } from '@mui/material/styles';
+import CssBaseline from '@mui/material/CssBaseline';
+
+const darkTheme = createTheme({
+  palette: {
+    mode: 'light',
+  },
+});
+
 
 function App() {
+
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(getMovies('all latest recommended upcoming'));
+    dispatch(getEvents());
+  }, [dispatch]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={darkTheme}>
+      <CssBaseline />
+      <React.Fragment>
+        <ResponsiveAppBar />
+        <Outlet />
+      </React.Fragment>
+    </ThemeProvider>
   );
 }
 
