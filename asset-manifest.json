@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/ecube-web/static/css/main.699b19ff.css",
-    "main.js": "/ecube-web/static/js/main.831dc0be.js",
+    "main.js": "/ecube-web/static/js/main.e3f296c6.js",
     "index.html": "/ecube-web/index.html",
     "main.699b19ff.css.map": "/ecube-web/static/css/main.699b19ff.css.map",
-    "main.831dc0be.js.map": "/ecube-web/static/js/main.831dc0be.js.map"
+    "main.e3f296c6.js.map": "/ecube-web/static/js/main.e3f296c6.js.map"
   },
   "entrypoints": [
     "static/css/main.699b19ff.css",
-    "static/js/main.831dc0be.js"
+    "static/js/main.e3f296c6.js"
   ]
 }
