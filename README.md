@@ -1,70 +1,55 @@
-# Getting Started with Create React App
+# Project 1: Build an Online Movie Ticket Booking Web Application using React and Redux 
+### Background:
+E-Cube is a web application,which allows user to book online tickets forlatest movies,concerts and other LIVE events happening in the city.With the increase in web traffic, E-Cube’s website load time increases significantly which in turn reduces the speed and performance of the website. It was earlier designed using traditional web development methodologies. Also, on adding or updating any feature, maintaining the website was difficult for the development team due to tight coupling of UI components. Hence, all these challenges led to unsatisfied user experience. Now they want to focus on maximizing the usability and enhancing the user experience, so the company decided to upgrade their website using React library. 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Goal: 
+The goal of this project is to build an online ticket booking application for latest movies, upcoming movies, concerts, and other LIVE events. 
 
-## Available Scripts
+### Web Application Requirement: 
+JavaScript, HTML, CSS, React, Redux, and Axios to call API. 
 
-In the project directory, you can run:
+### Web Application Implementation:
+The Web Application should include following aspects: 
 
-### `npm start`
+1. All Latest movies
+2. Latest Movies Details
+3. Ticket booking page
+4. Final Ticket Page
+5. All Upcoming movies
+6. Events
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![Mockup 1](/assets/mockup-1.png "Mockup 1")
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+#### 1. Latest Movies: 
+This section should contain the list of all the new movies available in the theatre.
 
-### `npm test`
+![Mockup 2](/assets/mockup-2.png "Mockup 2")
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### 2. Movies Detail Page: 
+On clicking the movie, the application should navigate the user to its details page which should include below options.
 
-### `npm run build`
+![Mockup 3](/assets/mockup-3.png "Mockup 3")
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#### 3. Ticket Booking Page: 
+On clicking “Book Now” option, users should be navigated to ticket booking page which should include the below options.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![Mockup 4](/assets/mockup-4.png "Mockup 4")
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#### 4. Final Booking Page: 
+After selecting the tickets, a QR code should be generated with all the booking details, which can be scanned by user’s mobile phone.
 
-### `npm run eject`
+![Mockup 5](/assets/mockup-5.png "Mockup 5")
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+#### 5. Nearby Event: 
+This section should have the details of events like concerts, Drama-plays, Competitions and other activities happening in the city.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![Mockup 6](/assets/mockup-6.png "Mockup 6")
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+#### 6. You will be provided a Node.js API which will fetch the movies data (dynamic) stored in MongoDB database.
+#### 7. You should be able to make a call to this API from your application code using Axios. 
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+#### APIs to be used:
+- Events: http://3.17.216.66:4000/events
+- Upcoming Movies: http://3.17.216.66:4000/upcomingMovies
+- Details Page: http://3.17.216.66/latest/5ab12612f36d2879268f284a
+- Latest Movies: http://3.17.216.66:4000/latest
