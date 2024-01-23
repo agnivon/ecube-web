@@ -1,6 +1,6 @@
-# Project 1: Build an Online Movie Ticket Booking Web Application using React and Redux 
+# Online Movie Ticket Booking Web Application using React and Redux 
 ### Background:
-E-Cube is a web application,which allows user to book online tickets forlatest movies,concerts and other LIVE events happening in the city.With the increase in web traffic, E-Cube’s website load time increases significantly which in turn reduces the speed and performance of the website. It was earlier designed using traditional web development methodologies. Also, on adding or updating any feature, maintaining the website was difficult for the development team due to tight coupling of UI components. Hence, all these challenges led to unsatisfied user experience. Now they want to focus on maximizing the usability and enhancing the user experience, so the company decided to upgrade their website using React library. 
+E-Cube is a web application,which allows user to book online tickets forlatest movies,concerts and other LIVE events happening in the city. With the increase in web traffic, E-Cube’s website load time increases significantly which in turn reduces the speed and performance of the website. It was earlier designed using traditional web development methodologies. Also, on adding or updating any feature, maintaining the website was difficult for the development team due to tight coupling of UI components. Hence, all these challenges led to unsatisfied user experience. As a result, we focused on maximizing the usability and enhancing the user experience, so we upgraded their website using React library. 
 
 ### Goal: 
 The goal of this project is to build an online ticket booking application for latest movies, upcoming movies, concerts, and other LIVE events. 
